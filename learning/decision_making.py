@@ -13,9 +13,14 @@
 # "num1 and num2 are equal"
 
 # You must display the value of the user input instead of num1 and num2.
-# num1 = input("Enter a number:")
-# num2 = input("Enter another number:")
-
+num1 = int(input("Enter a number: "))
+num2 = int(input("Enter another number: "))
+if num1 > num2:
+    print(f"{num1} is greater than {num2}")
+elif num2 > num1:
+    print(f"{num2} is greater than {num1}")
+elif num1 == num2:
+    print(f"{num1} and {num2} are equal")
 # f"{num1} is greater than {num2}"
 # "num2 is greater than num1"
 # "num1 and num2 are equal"
@@ -41,6 +46,13 @@ has_license = False
 "You can't drive yet. You must be 18 years old and have a license"
 
 "You can't drive. You need to have a license"
+
+if age >= 18 and has_license:
+    print("You can drive")
+elif age >= 18 and not has_license:
+    print("You can't drive. You need to have a license")
+else:
+    print("You can't drive yet. You must be 18 years old and have a license")
 
 # Decision Making Practice #3
 # To access a certain job, the candidate must be able to program in Python and speak French.
@@ -85,9 +97,30 @@ knows_python = False
 # If age is less than 50 then print I am quadragenarian
 
 
+user=input("what is your name?")
+user=input("Enter your relatives name")
+user=int(input("How old are you?"))
+if age<20:
+    print("I am young")
+if age<30:
+    print("I am a vicenareian")
+if age<40:
+    print("I am a tricenarian")
+if age<50:
+    print("I am a quadragenarian")
+
+
+
 # Decision Making Practice #5
 # ask the user for their age
 # if the user's  is between 18 - 21 , print they can vote, other wise print better luck next time.
+user=int(input("How old are you?"))
+if user("18-21"):
+    print("They can vote")
+else:
+    print("better luck next time")
+
+
 
 
 #######################decision making challenge#####################
